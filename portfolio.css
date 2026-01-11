@@ -28,16 +28,14 @@ body {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: #d9d9d9;
-    margin-bottom: 1rem;
 }
 
 .left-panel h1 {
     font-size: 1.6rem;
-    font-weight: bold;
 }
 
 .left-panel h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-top: 1rem;
 }
@@ -48,5 +46,93 @@ body {
 }
 
 .right-panel {
-    padding: 2rem;
+    padding: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.experience {
+    border-left: 2px solid #6f7c99;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.experience h3 {
+    font-size: 1.1rem;
+}
+
+.experience span {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.experience p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.skill {
+    margin-bottom: 1.2rem;
+}
+
+.skill span {
+    font-size: 0.9rem;
+}
+
+.skill-bar {
+    width: 110px;
+    height: 8px;
+    background-color: #555;
+    margin-top: 0.4rem;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #8fa3c7;
+}
+
+.skill-fill.html {
+    width: 85%;
+}
+
+.skill-fill.css {
+    width: 80%;
+}
+
+.skill-fill.js {
+    width: 65%;
+}
+
+.design-skills {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 6px solid #8fa3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.circle.illustrator {
+    border-color: #ff9a00;
+}
+
+.circle.indesign {
+    border-color: #ff3366;
+}
+
+.circle.figma {
+    border-color: #a259ff;
 }
