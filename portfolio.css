@@ -54,27 +54,6 @@ body {
     margin: 2.5rem 0 1.5rem;
 }
 
-.experience {
-    border-left: 2px solid #6f7c99;
-    padding-left: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.experience h3 {
-    font-size: 1.1rem;
-}
-
-.experience span {
-    font-size: 0.8rem;
-    opacity: 0.7;
-}
-
-.experience p {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    line-height: 1.5;
-}
-
 .skill {
     margin-bottom: 1.2rem;
 }
@@ -95,22 +74,13 @@ body {
     background-color: #8fa3c7;
 }
 
-.skill-fill.html {
-    width: 85%;
-}
-
-.skill-fill.css {
-    width: 80%;
-}
-
-.skill-fill.js {
-    width: 65%;
-}
+.skill-fill.html { width: 85%; }
+.skill-fill.css { width: 80%; }
+.skill-fill.js { width: 65%; }
 
 .design-skills {
     display: flex;
     gap: 2rem;
-    margin-top: 1rem;
 }
 
 .circle {
@@ -125,17 +95,9 @@ body {
     text-align: center;
 }
 
-.circle.illustrator {
-    border-color: #ff9a00;
-}
-
-.circle.indesign {
-    border-color: #ff3366;
-}
-
-.circle.figma {
-    border-color: #a259ff;
-}
+.circle.illustrator { border-color: #ff9a00; }
+.circle.indesign { border-color: #ff3366; }
+.circle.figma { border-color: #a259ff; }
 
 .projects {
     display: grid;
@@ -150,25 +112,18 @@ body {
 
 .project img {
     width: 100%;
-    height: 120px;
+    height: 130px;
     object-fit: cover;
-    margin-bottom: 0.8rem;
-}
-
-.project-image {
-    width: 100%;
-    height: 120px;
-    background-color: #777;
-    margin-bottom: 0.8rem;
 }
 
 .project h3 {
+    margin-top: 0.8rem;
     font-size: 1rem;
-    margin-bottom: 0.4rem;
 }
 
 .project p {
     font-size: 0.85rem;
+    margin-top: 0.4rem;
     line-height: 1.4;
 }
 
@@ -177,5 +132,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-panel {
+        text-align: center;
+        align-items: center;
+    }
+
+    .design-skills {
+        justify-content: center;
+    }
 }
