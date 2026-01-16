@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3A3A41;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #53627E;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 100vh;
+}
+
+.left-panel {
+    background-color: #53627E;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profile-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.left-panel h1 {
+    font-size: 1.6rem;
+}
+
+.left-panel h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.left-panel p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.right-panel {
+    padding: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.skill span {
+    font-size: 1.05rem;
+}
+
+.skill-bar {
+    width: 100%;
+    max-width: 260px;
+    height: 12px;
+    background-color: #555;
+    margin-top: 0.6rem;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #8fa3c7;
+    transition: width 0.4s ease;
+}
+
+.skill-fill.html { width: 85%; }
+.skill-fill.css { width: 80%; }
+.skill-fill.js { width: 65%; }
+
+.skill:hover .skill-fill {
+    width: 100%;
+}
+
+.design-skills {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #8fa3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(255,255,255,0.35);
+}
+
+.circle.illustrator { border-color: #ff9a00; }
+.circle.indesign { border-color: #ff3366; }
+.circle.figma { border-color: #a259ff; }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.8rem;
+    margin-top: 3rem;
+}
+
+.project {
+    background-color: #4a4a52;
+    padding: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    background-color: #585861;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
+
+.project p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.list li {
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-panel {
+        text-align: center;
+        align-items: center;
+    }
+
+    .skills,
+    .design-skills {
+        align-items: center;
+    }
+}
